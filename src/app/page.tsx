@@ -1,4 +1,6 @@
+import { headers } from 'next/headers';
 import StatusLabel, { Status } from './components/status-label';
+import AddCompanyButton from './components/add-company-button';
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
       <StatusLabel status={Status.Suspended} disabled={true}>
         Suspended
       </StatusLabel>
+      <AddCompanyButton />
     </main>
   );
 }
